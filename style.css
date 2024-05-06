@@ -1,0 +1,29 @@
+/* Transitions */
+
+body {
+  display: grid;
+  place-content: center;
+  min-height: 50vh;
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  background-color: #09f;
+  border-radius: 50%;
+  position: relative;
+}
+
+/* 
+  Initial state: without hovering
+  Final state: hovering
+ */
+
+.circle:hover {
+  /* If we use 'scale' we aren't changing the original size. It appears as if its size is increasing, but it's only visual. On the other hand, if we use 'width' and 'height' we are really changing the original size */
+  scale: 2;
+  /* width: 80px;
+  height: 80px; */
+  background-color: purple;
+  box-shadow: 0 0 10px purple;
+}
