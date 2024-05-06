@@ -12,18 +12,16 @@ body {
   background-color: #09f;
   border-radius: 50%;
   position: relative;
+  /* transition-duration: 0; -> default */
+  /* transition-duration: 500ms; */
+  transition-duration: 2s;
+  /* transition-property: all; -> default */
+  transition-property: scale, background; /* This property is important for performance. Sometimes we can animate things we don't want and that could affect the performance of our website. Therefore, it's advisable to specify what things we want to animate */
 }
 
-/* 
-  Initial state: without hovering
-  Final state: hovering
- */
-
 .circle:hover {
-  /* If we use 'scale' we aren't changing the original size. It appears as if its size is increasing, but it's only visual. On the other hand, if we use 'width' and 'height' we are really changing the original size */
   scale: 2;
-  /* width: 80px;
-  height: 80px; */
   background-color: purple;
   box-shadow: 0 0 10px purple;
+  /* transition-duration: 2s; ❌ */
 }
