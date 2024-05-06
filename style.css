@@ -12,16 +12,17 @@ body {
   background-color: #09f;
   border-radius: 50%;
   position: relative;
-  /* transition-duration: 0; -> default */
-  /* transition-duration: 500ms; */
   transition-duration: 2s;
-  /* transition-property: all; -> default */
-  transition-property: scale, background; /* This property is important for performance. Sometimes we can animate things we don't want and that could affect the performance of our website. Therefore, it's advisable to specify what things we want to animate */
+  /* transition-timing-function: linear; -> default */
+  /* transition-timing-function: ease; */
+  /* transition-timing-function: ease-in; */
+  /* transition-timing-function: ease-out; */
+  /* transition-timing-function: ease-in-out; */
+  /* transition-timing-function: steps(50); -> This one could be useful to animate loading icons */
 }
 
 .circle:hover {
   scale: 2;
-  background-color: purple;
-  box-shadow: 0 0 10px purple;
-  /* transition-duration: 2s; ❌ */
+  background-color: red;
+  box-shadow: 0 0 10px red;
 }
