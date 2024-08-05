@@ -1,0 +1,37 @@
+/* Transitions */
+
+body {
+  display: grid;
+  place-content: center;
+  min-height: 100dvh;
+  background-color: #333;
+}
+
+/* We can add transitions when there are two states */
+
+/* First state - initial */
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #05fd09;
+  transition-duration: 1s; /* This always should be in the initial state */
+}
+
+/* Second state - final */
+.circle:hover {
+  scale: 2; /* This doesn't change the occupied space of the element */
+  /* width: 200px;
+  height: 200px; */
+  background-color: #8a2be2;
+  box-shadow: 0 0 8px #8a2be2;
+  /* transition-duration: 1s; This is not commonly used */
+}
+
+/* 
+
+Note: It's always important recognize the initial state and the final state between the elements.
+
+For example, when we change a class of an element with JS, certainly we are changing its state.
+
+*/
