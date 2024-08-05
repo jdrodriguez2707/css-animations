@@ -13,8 +13,12 @@ body {
   height: 100px;
   border-radius: 50%;
   background-color: #05fd09;
-  transition-duration: 1s;
-  transition-property: background-color, scale; /* This is very important in terms of performance, because we won't always want to animate everything. The less things we animate, the better. */
+  transition-duration: 2s;
+  /* transition-timing-function: ease-in; */
+  /* transition-timing-function: ease-out; */
+  /* transition-timing-function: ease-in-out; */
+  /* transition-timing-function: ease; */
+  /* transition-timing-function: steps(5); */
 }
 
 /* Second state - final */
