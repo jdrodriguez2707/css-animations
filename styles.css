@@ -14,11 +14,8 @@ body {
   border-radius: 50%;
   background-color: #05fd09;
   transition-duration: 2s;
-  /* transition-timing-function: ease-in; */
-  /* transition-timing-function: ease-out; */
-  /* transition-timing-function: ease-in-out; */
-  /* transition-timing-function: ease; */
-  /* transition-timing-function: steps(5); */
+  transition-timing-function: cubic-bezier(0.86, -0.06, 0, 0.35);
+  /* We can use devtools to configure this */
 }
 
 /* Second state - final */
