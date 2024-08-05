@@ -7,20 +7,38 @@ body {
   background-color: #333;
 }
 
-/* First state - initial */
 .circle {
-  width: 100px;
-  height: 100px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
-  background-color: #05fd09;
+  background-color: #999898;
   transition-duration: 2s;
-  transition-timing-function: cubic-bezier(0.86, -0.06, 0, 0.35);
-  /* We can use devtools to configure this */
+  transition-timing-function: ease;
+  opacity: 0;
 }
 
-/* Second state - final */
-.circle:hover {
-  scale: 2;
-  background-color: #8a2be2;
-  box-shadow: 0 0 10px #8a2be2;
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #fff;
+}
+
+section:hover .circle {
+  opacity: 1;
+}
+
+.circle:first-child {
+  transition-delay: 0s;
+}
+
+.circle:nth-child(2) {
+  transition-delay: 300ms;
+}
+
+.circle:nth-child(3) {
+  transition-delay: 600ms;
 }
