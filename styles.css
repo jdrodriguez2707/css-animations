@@ -1,4 +1,4 @@
-/* Transitions */
+/* We only can use transitions with those elements that have an intermediate state  */
 
 body {
   display: grid;
